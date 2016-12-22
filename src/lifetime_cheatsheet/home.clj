@@ -5,29 +5,32 @@
             [hiccup.page :as page]
             [clojure.java.io :as io]))
 
-(def read-example (comp slurp io/resource :file))
+(def read-resource (comp slurp io/resource))
 
 (defn code [code-str]
   [:pre
    [:code {:class "c"}
     code-str]])
 
+(defn text [text-str]
+  [:p.text text-str])
+
 (defn tag-spans [tags]
   [:div.tag
    (for [tag tags]
      [:span {:class (name tag)} tag])])
 
-(defn row [data example]
-  (let [strs (->> example ((juxt :left :right)) (map read-example))
-        left-tags (-> example :left :tags)
-        right-tags (-> example :right :tags)]
-    [:tr
-     [:td
-      (code (first strs))
-      (tag-spans left-tags)]
-     [:td
-      (code (second strs))
-      (tag-spans right-tags)]]))
+(defn cell [data]
+  [:td
+   (when-let [code-str (:code data)]
+     (code (read-resource code-str)))
+   (when-let [text-str (:text data)]
+     (text (read-resource text-str)))
+   (tag-spans (:tags data))])
+
+(defn row [example]
+  [:tr
+   (map cell ((juxt :left :right) example))])
 
 (defn html []
   (let [data (config/data)]
@@ -41,4 +44,4 @@
       [:body
        [:table.grid
         (for [ex (:examples data)]
-          (row data ex))]])))
+          (row ex))]])))

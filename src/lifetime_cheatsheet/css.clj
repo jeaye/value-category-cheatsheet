@@ -37,17 +37,17 @@
       {:border "1px solid black"
        :border-collapse "collapse"}]
      [:td {:position "relative"}]
-     [:.tag {:position "absolute"
-             :bottom "5px"
-             :right "5px"}
+     [:div.tag {:position "absolute"
+                :bottom "5px"
+                :right "5px"}
       [:span
        {:font-size tag-font-size
         :color tag-color
         :margin "5px 5px 5px 5px"
         :padding "2px 4px 2px 4px"
         :border-radius "5px"}]
-      [:span.valid {:background-color green}]
-      [:span.idiomatic {:background-color green}]
-      [:span.undefined-behavior {:background-color orange}]
-      [:span.non-idiomatic {:background-color orange}]]
+      [:span.valid :span.idiomatic {:background-color green}]
+      [:span.undefined-behavior :span.non-idiomatic {:background-color orange}]]
+     [:p.text
+      {:margin "5px 5px 5px 5px"}]
      [:a:hover {:color link-hover-color}]]))
