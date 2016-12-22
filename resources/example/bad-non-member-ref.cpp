@@ -1,5 +1,5 @@
 int const& foo()
 {
-  int ret{};
-  return ret;
+  int ret{}; // lvalue
+  return ret; // lvalue
 }
