@@ -48,6 +48,10 @@
         :border-radius "5px"}]
       [:span.valid :span.idiomatic {:background-color green}]
       [:span.undefined-behavior :span.non-idiomatic {:background-color orange}]]
+     [:p.title
+      {:font-style "italic"
+       :font-size "0.8em"
+       :margin "5px 5px 5px 5px"}]
      [:p.text
       {:margin "5px 5px 5px 5px"}]
      [:a:hover {:color link-hover-color}]]))

@@ -7,6 +7,9 @@
 
 (def read-resource (comp slurp io/resource))
 
+(defn title [title-str]
+  [:p.title title-str])
+
 (defn code [code-str]
   [:pre
    [:code {:class "c"}
@@ -22,6 +25,8 @@
 
 (defn cell [data]
   [:td
+   (when-let [title-str (:title data)]
+     (title title-str))
    (when-let [code-str (:code data)]
      (code (read-resource code-str)))
    (when-let [text-str (:text data)]

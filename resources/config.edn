@@ -5,7 +5,8 @@
                      :code "code/good-non-member-ref.cpp"}}
             {:left {:text-data "Before"}
              :right {:text-data "After"}}
-            {:left {:code "code/bad-non-member-ref.cpp"
+            {:left {:title "Returning reference to const local"
+                    :code "code/bad-non-member-ref.cpp"
                     :tags [:undefined-behavior]}
              :right {:code "code/good-non-member-ref.cpp"
                      :tags [:valid :idiomatic]}}]}
