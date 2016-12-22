@@ -1,9 +1,5 @@
 {:headers ["Before" "After"]
- :tags {:valid "Valid"
-        :idiomatic "Idiomatic"
-        :ub "Undefined behavior"
-        :non-idiomatic "Non-idiomatic"}
  :examples [{:left {:file "example/bad-non-member-ref.cpp"
-                   :tags [:ub]}
+                   :tags [:undefined-behavior]}
              :right {:file "example/good-non-member-ref.cpp"
                      :tags [:valid :idiomatic]}}]}

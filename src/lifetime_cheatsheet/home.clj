@@ -15,7 +15,7 @@
 (defn tag-spans [tags]
   [:div.tag
    (for [tag tags]
-     [:span tag])])
+     [:span {:class (name tag)} tag])])
 
 (defn row [data example]
   (let [strs (->> example ((juxt :left :right)) (map read-example))
