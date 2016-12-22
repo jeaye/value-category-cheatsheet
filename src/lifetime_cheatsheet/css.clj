@@ -29,4 +29,7 @@
       :margin "0%"
       :padding "0%"}
      [:.grid {:width "100%"}]
+     [:table :tr :td
+      {:border "1px solid black"
+       :border-collapse "collapse"}]
      [:a:hover {:color link-hover-color}]]))
