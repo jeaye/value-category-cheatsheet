@@ -2,6 +2,7 @@
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]))
 
-(def data (delay (-> (io/resource "config.edn")
-                     slurp
-                     edn/read-string)))
+(defn data []
+  (-> (io/resource "config.edn")
+      slurp
+      edn/read-string))

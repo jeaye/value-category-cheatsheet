@@ -29,5 +29,5 @@
      [:script "hljs.initHighlightingOnLoad();"]]
     [:body
      [:table.grid
-      (for [ex (:examples @config/data)]
+      (for [ex (:examples (config/data))]
         (row ex))]]))
