@@ -12,21 +12,33 @@
    [:code {:class "c"}
     code-str]])
 
-(defn row [example]
-  (let [strs (->> example ((juxt :left :right)) (map read-example))]
+(defn tag-spans [tags]
+  [:div.tag
+   (for [tag tags]
+     [:span tag])])
+
+(defn row [data example]
+  (let [strs (->> example ((juxt :left :right)) (map read-example))
+        left-tags (-> example :left :tags)
+        right-tags (-> example :right :tags)]
     [:tr
-     [:td (code (first strs))]
-     [:td (code (second strs))]]))
+     [:td
+      (code (first strs))
+      (tag-spans left-tags)]
+     [:td
+      (code (second strs))
+      (tag-spans right-tags)]]))
 
 (defn html []
-  (page/html5
-    [:head
-     [:style (css/main)]
-     [:link {:rel "stylesheet"
-              :href "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-light.min.css"}]
-     [:script {:src "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"}]
-     [:script "hljs.initHighlightingOnLoad();"]]
-    [:body
-     [:table.grid
-      (for [ex (:examples (config/data))]
-        (row ex))]]))
+  (let [data (config/data)]
+    (page/html5
+      [:head
+       [:style (css/main)]
+       [:link {:rel "stylesheet"
+               :href "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-light.min.css"}]
+       [:script {:src "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"}]
+       [:script "hljs.initHighlightingOnLoad();"]]
+      [:body
+       [:table.grid
+        (for [ex (:examples data)]
+          (row data ex))]])))

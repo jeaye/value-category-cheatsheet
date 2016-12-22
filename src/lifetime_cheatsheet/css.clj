@@ -32,4 +32,10 @@
      [:table :tr :td
       {:border "1px solid black"
        :border-collapse "collapse"}]
+     [:td {:position "relative"}]
+     [:.tag {:position "absolute"
+             :bottom 0
+             :right "5px"}
+      [:span
+       {:margin "5px 5px 5px 5px"}]]
      [:a:hover {:color link-hover-color}]]))
