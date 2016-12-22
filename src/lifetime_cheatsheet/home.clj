@@ -26,6 +26,8 @@
      (code (read-resource code-str)))
    (when-let [text-str (:text data)]
      (text (read-resource text-str)))
+   (when-let [text-str (:text-data data)]
+     (text text-str))
    (tag-spans (:tags data))])
 
 (defn row [example]

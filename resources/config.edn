@@ -1,8 +1,10 @@
-{:examples [{:left {:text "text/overview"}}
+{:examples [{:left {:text-data "Overview"}}
             {:left {:code "code/bad-non-member-ref.cpp"
                     :tags [:undefined-behavior]}
              :right {:text "code/good-non-member-ref.cpp"
                      :code "code/good-non-member-ref.cpp"}}
+            {:left {:text-data "Before"}
+             :right {:text-data "After"}}
             {:left {:code "code/bad-non-member-ref.cpp"
                     :tags [:undefined-behavior]}
              :right {:code "code/good-non-member-ref.cpp"
