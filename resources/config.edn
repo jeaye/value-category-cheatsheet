@@ -1,0 +1,4 @@
+{:issues {:ub "Undefined behavior"
+          :non-idiomatic "Non-idiomatic"}
+ :examples [{:bad "bad-non-member-ref.cpp"
+             :good "good-non-member-ref.cpp"}]}

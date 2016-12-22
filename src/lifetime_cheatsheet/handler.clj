@@ -1,10 +1,11 @@
 (ns lifetime-cheatsheet.handler
-  (:require [compojure.core :refer :all]
+  (:require [lifetime-cheatsheet.config :as config]
+            [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
 
 (defroutes app-routes
-  (GET "/" [] "Hello World")
+  (GET "/" [] (pr-str @config/data))
   (route/not-found "Not Found"))
 
 (def app
