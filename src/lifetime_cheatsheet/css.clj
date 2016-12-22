@@ -14,6 +14,7 @@
 (def content-background-color base3)
 (def content-color base00)
 (def content-font-size "1.5em")
+(def tag-font-size "0.8em")
 (def link-hover-color orange)
 
 (defn main []
@@ -34,8 +35,10 @@
        :border-collapse "collapse"}]
      [:td {:position "relative"}]
      [:.tag {:position "absolute"
-             :bottom 0
+             :bottom "5px"
              :right "5px"}
       [:span
-       {:margin "5px 5px 5px 5px"}]]
+       {:font-size tag-font-size
+        :margin "5px 5px 5px 5px"
+        :background-color "white"}]]
      [:a:hover {:color link-hover-color}]]))
