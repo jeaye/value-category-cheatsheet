@@ -13,11 +13,10 @@
     code-str]])
 
 (defn row [example]
-  (let [bad-str (-> example :bad read-example)
-        good-str (-> example :good read-example)]
+  (let [strs (->> example ((juxt :left :right)) (map read-example))]
     [:tr
-     [:td (code bad-str)]
-     [:td (code good-str)]]))
+     [:td (code (first strs))]
+     [:td (code (second strs))]]))
 
 (defn html []
   (page/html5
