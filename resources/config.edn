@@ -1,8 +1,9 @@
-{:examples [{:left {:code "example/bad-non-member-ref.cpp"
+{:examples [{:left {:text "text/overview"}}
+            {:left {:code "code/bad-non-member-ref.cpp"
                     :tags [:undefined-behavior]}
-             :right {:text "example/good-non-member-ref.cpp"
-                     :code "example/good-non-member-ref.cpp"}}
-            {:left {:code "example/bad-non-member-ref.cpp"
+             :right {:text "code/good-non-member-ref.cpp"
+                     :code "code/good-non-member-ref.cpp"}}
+            {:left {:code "code/bad-non-member-ref.cpp"
                     :tags [:undefined-behavior]}
-             :right {:code "example/good-non-member-ref.cpp"
+             :right {:code "code/good-non-member-ref.cpp"
                      :tags [:valid :idiomatic]}}]}
