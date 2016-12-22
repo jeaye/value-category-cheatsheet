@@ -8,5 +8,4 @@
   (GET "/" [] (home/html))
   (route/not-found "Not Found"))
 
-(def app
-  (wrap-defaults app-routes site-defaults))
+(def app (wrap-defaults app-routes site-defaults))

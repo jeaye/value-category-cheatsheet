@@ -7,4 +7,10 @@
 (defn html []
   (page/html5
     [:head [:style (css/main)]]
-    [:div "meow!"]))
+    [:body
+     [:table.grid
+      [:tr
+       (for [ex (:examples @config/data)]
+        [:td
+         [:td (pr-str (:bad ex))]
+         [:td (pr-str (:good ex))]])]]]))
