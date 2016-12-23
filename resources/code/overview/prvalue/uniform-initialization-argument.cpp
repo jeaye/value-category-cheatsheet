@@ -1,3 +1,3 @@
-void foo(my_string const &s);
+void foo(std::string const &s);
 foo("kitty"); // argument is a prvalue
-foo(my_string{ "kitty" }); // exactly what's happening above
+foo(std::string{ "kitty" }); // exactly what's happening above

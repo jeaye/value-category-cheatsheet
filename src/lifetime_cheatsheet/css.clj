@@ -60,5 +60,6 @@
       {:margin "5px 5px 5px 5px"}]
      [:pre :code
       {:font-size code-font-size
-       :padding-bottom "5px"}]
+       :padding-bottom "5px"}
+      [:.hljs-built_in {:color (str violet " !important")}]]
      [:a:hover {:color link-hover-color}]]))

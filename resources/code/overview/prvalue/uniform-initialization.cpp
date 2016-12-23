@@ -1,2 +1,2 @@
 double{}; // prvalue
-my_container&lt;database&gt;{}; // prvalue
+std::vector&lt;database&gt;{}; // prvalue
