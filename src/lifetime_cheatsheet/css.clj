@@ -23,7 +23,7 @@
 
 (defn main []
   (garden/css
-    {:pretty-print? false}
+    {:pretty-print? true}
     [:html :body {:height "100%"}]
     [:body
      {:background-color content-background-color
@@ -41,8 +41,8 @@
       {:table-layout "fixed"
        :overflow "auto"}
       [:.left-column {:width "50%"}]
-      [:.right-column {:width "50%"}]]
-     [:td {:position "relative"}]
+      [:.right-column {:width "50%"}]
+      [:td {:position "relative"}]]
      [:div.tag {:position "absolute"
                 :bottom "5px"
                 :right "5px"}
@@ -52,7 +52,8 @@
         :margin "5px 5px 5px 5px"
         :padding "2px 4px 2px 4px"
         :border-radius "5px"}]
-      [:span.valid :span.idiomatic {:background-color green}]
+      [:span.valid :span.idiomatic
+       {:background-color green}]
       [:span.undefined-behavior :span.invalid :span.non-idiomatic
        {:background-color orange}]]
      [:p.title
