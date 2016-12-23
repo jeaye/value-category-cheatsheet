@@ -13,7 +13,8 @@
 
 (def content-background-color base3)
 (def content-color base00)
-(def content-font-size "1.5em")
+(def content-font-size "1.2em")
+(def code-font-size "1.5em")
 
 (def tag-color base3)
 (def tag-font-size "0.8em")
@@ -36,6 +37,8 @@
      [:table :tr :td
       {:border "1px solid black"
        :border-collapse "collapse"}]
+     [:.left-column {:width "30%"}]
+     [:.right-column {:width "70%"}]
      [:td {:position "relative"}]
      [:div.tag {:position "absolute"
                 :bottom "5px"
@@ -54,4 +57,6 @@
        :margin "5px 5px 5px 5px"}]
      [:p.text
       {:margin "5px 5px 5px 5px"}]
+     [:code
+      {:font-size code-font-size}]
      [:a:hover {:color link-hover-color}]]))

@@ -50,5 +50,7 @@
        [:script "hljs.initHighlightingOnLoad();"]]
       [:body
        [:table.grid
+        [:col.left-column]
+        [:col.right-column]
         (for [ex (:examples data)]
           (row ex))]])))
