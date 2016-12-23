@@ -1,0 +1,1 @@
+All literals, aside from string literals, are prvalues. String literals are lvalues.

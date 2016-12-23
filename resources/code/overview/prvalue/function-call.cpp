@@ -1,0 +1,2 @@
+int foo();
+foo(); // prvalue

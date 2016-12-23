@@ -1,8 +1,34 @@
-{:examples [{:left {:text-data "Overview"}}
-            {:left {:code "code/bad-non-member-ref.cpp"
-                    :tags [:undefined-behavior]}
-             :right {:text "code/good-non-member-ref.cpp"
-                     :code "code/good-non-member-ref.cpp"}}
+{:examples [{:left {:text-data "Rvalues"}}
+            {:right {:text "text/overview/rvalue/description"}}
+            {:left {:text-data "PRvalues"}}
+            {:left {:code "code/overview/prvalue/literal.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/literal"}}
+            {:left {:code "code/overview/prvalue/function-call.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/function-call"}}
+            {:left {:code "code/overview/prvalue/addition.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/addition"}}
+            {:left {:code "code/overview/prvalue/address.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/address"}}
+            {:left {:code "code/overview/prvalue/value-cast.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/value-cast"}}
+            {:left {:code "code/overview/prvalue/lambda.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/lambda"}}
+            {:left {:code "code/overview/prvalue/postfix.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/postfix"}}
+            {:left {:code "code/overview/prvalue/uniform-initialization.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/uniform-initialization"}}
+            {:left {:code "code/overview/prvalue/uniform-initialization-argument.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/prvalue/uniform-initialization-argument"}}
+
             {:left {:text-data "Before"}
              :right {:text-data "After"}}
             {:left {:title "Returning reference to const local"

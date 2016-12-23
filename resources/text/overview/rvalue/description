@@ -1,0 +1,1 @@
+rvalues are either prvalues or xvalues. prvalues are "pure," meaning they've never been bound to a name. xvalues are rvalues which are also lvalues, such as lvalues which have been casted to an rvalue reference. You cannot take the address of any rvalue.

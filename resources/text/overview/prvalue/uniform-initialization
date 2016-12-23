@@ -1,0 +1,1 @@
+The construction of any type, using uniform initialization, which isn't a variable or member definition, is a prvalue. This is the same for both trivial and non-trivial types.

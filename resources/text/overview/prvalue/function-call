@@ -1,0 +1,1 @@
+Any function call returning a non-reference value type, including pointers, yields a prvalue. In the call expression, the value has not been given a name, which makes it pure.

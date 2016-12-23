@@ -1,0 +1,1 @@
+Arguments passed to functions, including constructors, which are implicitly converted, are prvalues. This is commonly seen with std::string and various smart pointer types.

@@ -1,0 +1,1 @@
+Like any function returning a non-reference value type, the result of arithmetic, when not using compound operators such as +=, is a prvalue.
