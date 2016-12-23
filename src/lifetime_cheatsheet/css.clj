@@ -37,8 +37,11 @@
      [:table :tr :td
       {:border "1px solid black"
        :border-collapse "collapse"}]
-     [:.left-column {:width "30%"}]
-     [:.right-column {:width "70%"}]
+     [:table
+      {:table-layout "fixed"
+       :overflow "auto"}
+      [:.left-column {:width "50%"}]
+      [:.right-column {:width "50%"}]]
      [:td {:position "relative"}]
      [:div.tag {:position "absolute"
                 :bottom "5px"
