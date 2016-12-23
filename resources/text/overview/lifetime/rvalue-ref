@@ -1,0 +1,1 @@
+A prvalue can be bound to an rvalue reference, which will prolong its lifetime to be the lifetime of the reference.

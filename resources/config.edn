@@ -70,6 +70,20 @@
                     :tags [:valid :idiomatic]}
              :right {:text "text/overview/xvalue/member"}}
 
+            {:left {:text-data "Lifetime extension"}}
+            {:left {:code "code/overview/lifetime/ref-to-const.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lifetime/ref-to-const"}}
+            {:left {:code "code/overview/lifetime/rvalue-ref.cpp"
+                    :tags [:valid :non-idiomatic]}
+             :right {:text "text/overview/lifetime/rvalue-ref"}}
+            {:left {:code "code/overview/lifetime/move-rvalue.cpp"
+                    :tags [:undefined-behavior]}
+             :right {:text "text/overview/lifetime/move-rvalue"}}
+            {:left {:code "code/overview/lifetime/ref-to-const-from-xvalue.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lifetime/ref-to-const-from-xvalue"}}
+
             {:left {:text-data "Before"}
              :right {:text-data "After"}}
             {:left {:title "Returning reference to const local"

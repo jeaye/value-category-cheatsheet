@@ -1,0 +1,1 @@
+While it's well-defined to bind an xvalue to an lvalue reference-to-const, no lifetimes will be prolonged, so it must be done with care.

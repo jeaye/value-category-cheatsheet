@@ -1,0 +1,1 @@
+A prvalue can be bound to an lvalue reference-to-const, which will prolong its lifetime to be the lifetime of the reference.
