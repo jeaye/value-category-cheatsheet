@@ -14,7 +14,7 @@
 (def content-background-color base3)
 (def content-color base00)
 (def content-font-size "1.2em")
-(def code-font-size "1.5em")
+(def code-font-size "1.3em")
 
 (def tag-color base3)
 (def tag-font-size "0.8em")
@@ -57,6 +57,7 @@
        :margin "5px 5px 5px 5px"}]
      [:p.text
       {:margin "5px 5px 5px 5px"}]
-     [:code
-      {:font-size code-font-size}]
+     [:pre :code
+      {:font-size code-font-size
+       :padding-bottom "5px"}]
      [:a:hover {:color link-hover-color}]]))
