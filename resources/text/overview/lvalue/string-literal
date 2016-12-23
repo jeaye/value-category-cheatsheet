@@ -1,0 +1,1 @@
+Unlike all other literals, the string literal is an lvalue. This originated in C, since string literals are arrays and arrays in C can only exist in expressions as lvalues.

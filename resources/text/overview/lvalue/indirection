@@ -1,0 +1,1 @@
+While the pointer arithmetic yields a prvalue, the indirection operator on that prvalue gives an lvalue.

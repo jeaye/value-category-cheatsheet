@@ -1,0 +1,1 @@
+A non-static data member of an lvalue is also an lvalue.

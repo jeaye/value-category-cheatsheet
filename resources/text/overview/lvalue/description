@@ -1,0 +1,1 @@
+lvalues, generalized as glvalues, are either specifically lvalues or xvalues. lvalues must have a name and may exist as a local, global, parameter, etc. xvalues are both lvalues and (impure) rvalues, which may be the result of returning or casting an lvalue to an rvalue reference.

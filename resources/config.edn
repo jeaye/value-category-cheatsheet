@@ -29,6 +29,33 @@
                     :tags [:valid :idiomatic]}
              :right {:text "text/overview/prvalue/uniform-initialization-argument"}}
 
+            {:left {:text-data "Lvalues"}}
+            {:right {:text "text/overview/lvalue/description"}}
+            {:left {:code "code/overview/lvalue/string-literal.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/string-literal"}}
+            {:left {:code "code/overview/lvalue/function-call.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/function-call"}}
+            {:left {:code "code/overview/lvalue/prefix.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/prefix"}}
+            {:left {:code "code/overview/lvalue/ostream.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/ostream"}}
+            {:left {:code "code/overview/lvalue/indirection.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/indirection"}}
+            {:left {:code "code/overview/lvalue/rvalue-ref-call.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/rvalue-ref-call"}}
+            {:left {:code "code/overview/lvalue/member.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/member"}}
+            {:left {:code "code/overview/lvalue/ref-to-rvalue-ref.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/lvalue/ref-to-rvalue-ref"}}
+
             {:left {:text-data "Before"}
              :right {:text-data "After"}}
             {:left {:title "Returning reference to const local"

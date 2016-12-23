@@ -1,0 +1,1 @@
+Even though the insertion operator is taking the prvalue 42, the operator returns a reference to the ostream, so it's an lvalue.

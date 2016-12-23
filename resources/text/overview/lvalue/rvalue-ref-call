@@ -1,0 +1,1 @@
+Though a is an rvalue reference, it's named, so it's an lvalue. In order to get it back to an rvalue, in an expression, std::move or similar will be needed.

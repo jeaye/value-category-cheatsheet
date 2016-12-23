@@ -1,0 +1,1 @@
+A reference, const or non-const, to an lvalue, is also an lvalue.

@@ -1,0 +1,1 @@
+Prefix operators return a reference to the object, which is an lvalue.

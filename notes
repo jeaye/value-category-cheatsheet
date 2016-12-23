@@ -1,40 +1,3 @@
-LVALUES
-
---
-
-"Meow!" // lvalue
-
---
-
-int a{}; // lvalue
-++a; // lvalue
-
---
-
-std::cout << 42; // lvalue
-
---
-
-int a{}; // lvalue
-int *p{ &a }; // lvalue
-*(p + 1); // lvalue
-
---
-
-int foo();
-int const &a{ foo() }; // lvalue
-
---
-
-int a{}; // lvalue
-int &b{ a }; // lvalue
-
---
-
-std::string &&rref{ std::string{ "meow" } }; // initializer is an rvalue
-std::string &lref{ rref }; // rref is and lvalue in an expression
-
-
 XVALUES
 
 http://eel.is/c++draft/expr.ref#4.2
@@ -54,6 +17,11 @@ std::move(s); // xvalue
 
 int&& foo();
 foo(); // xvalue
+
+--
+
+int &&a{ 5 }; // lvalue
+int &&b{ std::move(a) }; // lvalue
 
 --
 
