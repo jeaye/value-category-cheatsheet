@@ -36,8 +36,7 @@
    (tag-spans (:tags data))])
 
 (defn row [example]
-  [:tr
-   (map cell ((juxt :left :right) example))])
+  [:tr (map cell ((juxt :left :right) example))])
 
 (defn html []
   (let [data (config/data)]
@@ -49,9 +48,13 @@
        [:script {:src "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"}]
        [:script "hljs.initHighlightingOnLoad();"]]
       [:body
-       [:table.grid
-        [:colgroup
-         [:col.left-column]
-         [:col.right-column]]
-        (for [ex (:examples data)]
-          (row ex))]])))
+       (for [section (:sections data)]
+         (list
+           [:h2.section (:title section)]
+           [:p.section (read-resource (:description section))]
+           [:table.grid
+            [:colgroup
+             [:col.left-column]
+             [:col.right-column]]
+            (for [ex (:rows section)]
+              (row ex))]))])))

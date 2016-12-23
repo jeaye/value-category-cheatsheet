@@ -1,89 +1,88 @@
-{:examples [{:left {:text-data "Rvalues"}}
-            {:right {:text "text/overview/rvalue/description"}}
-            {:left {:text-data "PRvalues"}}
-            {:left {:code "code/overview/prvalue/literal.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/literal"}}
-            {:left {:code "code/overview/prvalue/function-call.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/function-call"}}
-            {:left {:code "code/overview/prvalue/addition.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/addition"}}
-            {:left {:code "code/overview/prvalue/address.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/address"}}
-            {:left {:code "code/overview/prvalue/value-cast.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/value-cast"}}
-            {:left {:code "code/overview/prvalue/lambda.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/lambda"}}
-            {:left {:code "code/overview/prvalue/postfix.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/postfix"}}
-            {:left {:code "code/overview/prvalue/uniform-initialization.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/uniform-initialization"}}
-            {:left {:code "code/overview/prvalue/uniform-initialization-argument.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/prvalue/uniform-initialization-argument"}}
-
-            {:left {:text-data "Lvalues"}}
-            {:right {:text "text/overview/lvalue/description"}}
-            {:left {:code "code/overview/lvalue/string-literal.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/string-literal"}}
-            {:left {:code "code/overview/lvalue/function-call.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/function-call"}}
-            {:left {:code "code/overview/lvalue/prefix.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/prefix"}}
-            {:left {:code "code/overview/lvalue/ostream.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/ostream"}}
-            {:left {:code "code/overview/lvalue/indirection.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/indirection"}}
-            {:left {:code "code/overview/lvalue/rvalue-ref-call.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/rvalue-ref-call"}}
-            {:left {:code "code/overview/lvalue/member.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/member"}}
-            {:left {:code "code/overview/lvalue/ref-to-rvalue-ref.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lvalue/ref-to-rvalue-ref"}}
-
-            {:left {:text-data "Xvalues"}}
-            {:left {:code "code/overview/xvalue/move.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/xvalue/move"}}
-            {:left {:code "code/overview/xvalue/return.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/xvalue/return"}}
-            {:left {:code "code/overview/xvalue/to-lvalue.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/xvalue/to-lvalue"}}
-            {:left {:code "code/overview/xvalue/member.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/xvalue/member"}}
-
-            {:left {:text-data "Lifetime extension"}}
-            {:left {:code "code/overview/lifetime/ref-to-const.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lifetime/ref-to-const"}}
-            {:left {:code "code/overview/lifetime/rvalue-ref.cpp"
-                    :tags [:valid :non-idiomatic]}
-             :right {:text "text/overview/lifetime/rvalue-ref"}}
-            {:left {:code "code/overview/lifetime/move-rvalue.cpp"
-                    :tags [:undefined-behavior]}
-             :right {:text "text/overview/lifetime/move-rvalue"}}
-            {:left {:code "code/overview/lifetime/ref-to-const-from-xvalue.cpp"
-                    :tags [:valid :idiomatic]}
-             :right {:text "text/overview/lifetime/ref-to-const-from-xvalue"}}
-
+{:sections [{:title "PRvalues"
+             :description  "text/overview/prvalue/description"
+             :rows [{:left {:code "code/overview/prvalue/literal.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/literal"}}
+                    {:left {:code "code/overview/prvalue/function-call.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/function-call"}}
+                    {:left {:code "code/overview/prvalue/addition.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/addition"}}
+                    {:left {:code "code/overview/prvalue/address.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/address"}}
+                    {:left {:code "code/overview/prvalue/value-cast.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/value-cast"}}
+                    {:left {:code "code/overview/prvalue/lambda.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/lambda"}}
+                    {:left {:code "code/overview/prvalue/postfix.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/postfix"}}
+                    {:left {:code "code/overview/prvalue/uniform-initialization.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/uniform-initialization"}}
+                    {:left {:code "code/overview/prvalue/uniform-initialization-argument.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/prvalue/uniform-initialization-argument"}}]}
+            {:title "Lvalues"
+             :description "text/overview/lvalue/description"
+             :rows [{:left {:code "code/overview/lvalue/string-literal.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/string-literal"}}
+                    {:left {:code "code/overview/lvalue/function-call.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/function-call"}}
+                    {:left {:code "code/overview/lvalue/prefix.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/prefix"}}
+                    {:left {:code "code/overview/lvalue/ostream.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/ostream"}}
+                    {:left {:code "code/overview/lvalue/indirection.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/indirection"}}
+                    {:left {:code "code/overview/lvalue/rvalue-ref-call.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/rvalue-ref-call"}}
+                    {:left {:code "code/overview/lvalue/member.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/member"}}
+                    {:left {:code "code/overview/lvalue/ref-to-rvalue-ref.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lvalue/ref-to-rvalue-ref"}}]}
+            {:title "Xvalues"
+             :description "text/overview/xvalue/description"
+             :rows [{:left {:code "code/overview/xvalue/move.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/xvalue/move"}}
+                    {:left {:code "code/overview/xvalue/return.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/xvalue/return"}}
+                    {:left {:code "code/overview/xvalue/to-lvalue.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/xvalue/to-lvalue"}}
+                    {:left {:code "code/overview/xvalue/member.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/xvalue/member"}}]}
+            {:title "Lifetime extension"
+             :description "text/overview/lifetime/description"
+             :rows [{:left {:code "code/overview/lifetime/ref-to-const.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lifetime/ref-to-const"}}
+                    {:left {:code "code/overview/lifetime/rvalue-ref.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lifetime/rvalue-ref"}}
+                    {:left {:code "code/overview/lifetime/move-rvalue.cpp"
+                            :tags [:undefined-behavior]}
+                     :right {:text "text/overview/lifetime/move-rvalue"}}
+                    {:left {:code "code/overview/lifetime/ref-to-const-from-xvalue.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/overview/lifetime/ref-to-const-from-xvalue"}}]}
+            ]
+ :examples [
             {:left {:text-data "Common mistakes"}}
             {:left {:text-data "Before"}
              :right {:text-data "After"}}

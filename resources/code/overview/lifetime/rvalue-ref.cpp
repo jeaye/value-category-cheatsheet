@@ -1,3 +1,4 @@
 struct T{};
+T foo();
 
-T &&ref{ T{} }; // lvalue
+T &&ref{ foo() }; // lvalue

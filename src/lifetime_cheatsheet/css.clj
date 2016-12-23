@@ -14,6 +14,7 @@
 (def content-background-color base3)
 (def content-color base00)
 (def content-font-size "1.2em")
+(def section-font-size "1.3em")
 (def code-font-size "1.3em")
 
 (def tag-color base3)
@@ -33,6 +34,7 @@
       :min-height "100%"
       :margin "0%"
       :padding "0%"}
+     [:p.section {:font-size section-font-size}]
      [:.grid {:width "100%"}]
      [:table :tr :td
       {:border "1px solid black"

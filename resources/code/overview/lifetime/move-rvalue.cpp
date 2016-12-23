@@ -1,4 +1,5 @@
 struct T{};
+T foo();
 
-T &&ref{ std::move(T{}) }; // lvalue
-T const &ref{ std::move(T{}) }; // lvalue
+T &&ref{ std::move(foo()) }; // lvalue
+T const &ref{ std::move(foo()) }; // lvalue
