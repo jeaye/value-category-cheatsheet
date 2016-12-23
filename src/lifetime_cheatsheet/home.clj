@@ -12,7 +12,7 @@
 
 (defn code [code-str]
   [:pre
-   [:code {:class "c"}
+   [:code {:class "cpp"}
     (hiccup/h code-str)]])
 
 (defn text [text-str]
