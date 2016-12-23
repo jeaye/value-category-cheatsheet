@@ -50,7 +50,8 @@
         :padding "2px 4px 2px 4px"
         :border-radius "5px"}]
       [:span.valid :span.idiomatic {:background-color green}]
-      [:span.undefined-behavior :span.non-idiomatic {:background-color orange}]]
+      [:span.undefined-behavior :span.invalid :span.non-idiomatic
+       {:background-color orange}]]
      [:p.title
       {:font-style "italic"
        :font-size "0.8em"
