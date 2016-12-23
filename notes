@@ -1,0 +1,140 @@
+RVALUES
+
+--
+
+rvalues are either prvalues or xvalues
+you cannot take the address of them
+
+
+PRVALUES
+
+--
+
+42 // prvalue
+true // prvalue
+
+--
+
+int foo();
+foo(); // prvalue
+
+--
+
+int a{}, b{};
+a + b; // prvalue
+
+--
+
+int a{}; // lvalue
+&a; // prvalue
+
+--
+
+int a{}; // lvalue
+static_cast<double>(a); // prvalue
+
+--
+
+[](int const a){ return a * a; }; // prvalue
+
+--
+
+int a{}; // lvalue
+a++; // prvalue
+
+--
+
+int foo();
+foo(); // prvalue
+
+--
+
+std::string{}; // prvalue
+
+--
+
+void foo(std::string const &s);
+foo("kitty"); // argument is a prvalue
+foo(std::string{ "kitty" }); // exactly what's happening above
+
+
+LVALUES
+
+--
+
+"Meow!" // lvalue
+
+--
+
+int a{}; // lvalue
+++a; // lvalue
+
+--
+
+std::cout << 42; // lvalue
+
+--
+
+int a{}; // lvalue
+int *p{ &a }; // lvalue
+*(p + 1); // lvalue
+
+--
+
+int foo();
+int const &a{ foo() }; // lvalue
+
+--
+
+int a{}; // lvalue
+int &b{ a }; // lvalue
+
+--
+
+std::string &&rref{ std::string{ "meow" } }; // initializer is an rvalue
+std::string &lref{ rref }; // rref is and lvalue in an expression
+
+
+XVALUES
+
+http://eel.is/c++draft/expr.ref#4.2
+
+--
+
+xvalues are both glvalues and rvalues
+they were lvalues which have been turned into rvalue refs
+since they're rvalues, you cannot take their address
+
+--
+
+std::string s; // lvalue
+std::move(s); // xvalue
+
+--
+
+int&& foo();
+foo(); // xvalue
+
+--
+
+struct foo{ int a; };
+foo f; // lvalue
+std::move(f).a; // xvalue
+
+
+LIFETIME EXTENSION
+
+--
+
+struct T{};
+T const &ref{ T{} }; // lvalue
+
+--
+
+struct T{};
+T &&ref{ T{} }; // lvalue
+
+--
+
+struct T{};
+T &&ref{ std::move(T{}) }; // undefined behavior
