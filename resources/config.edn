@@ -84,6 +84,7 @@
                     :tags [:valid :idiomatic]}
              :right {:text "text/overview/lifetime/ref-to-const-from-xvalue"}}
 
+            {:left {:text-data "Common mistakes"}}
             {:left {:text-data "Before"}
              :right {:text-data "After"}}
             {:left {:title "Returning reference to const local"
