@@ -1,35 +1,3 @@
-XVALUES
-
-http://eel.is/c++draft/expr.ref#4.2
-
---
-
-xvalues are both glvalues and rvalues
-they were lvalues which have been turned into rvalue refs
-since they're rvalues, you cannot take their address
-
---
-
-std::string s; // lvalue
-std::move(s); // xvalue
-
---
-
-int&& foo();
-foo(); // xvalue
-
---
-
-int &&a{ 5 }; // lvalue
-int &&b{ std::move(a) }; // lvalue
-
---
-
-struct foo{ int a; };
-foo f; // lvalue
-std::move(f).a; // xvalue
-
-
 LIFETIME EXTENSION
 
 --
@@ -46,3 +14,8 @@ T &&ref{ T{} }; // lvalue
 
 struct T{};
 T &&ref{ std::move(T{}) }; // undefined behavior
+
+--
+
+int &&a{ 5 }; // lvalue
+int const &b{ std::move(a) }; // lvalue; does not prolong lifetime

@@ -1,0 +1,1 @@
+A non-static data member of any rvalue is an xvalue.

@@ -1,0 +1,1 @@
+An lvalue that's moved will yield an xvalue. The same can be achieved by casting.

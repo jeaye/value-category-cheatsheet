@@ -1,0 +1,1 @@
+A function call which returns an rvalue reference yields an xvalue.

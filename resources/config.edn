@@ -56,6 +56,20 @@
                     :tags [:valid :idiomatic]}
              :right {:text "text/overview/lvalue/ref-to-rvalue-ref"}}
 
+            {:left {:text-data "Xvalues"}}
+            {:left {:code "code/overview/xvalue/move.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/xvalue/move"}}
+            {:left {:code "code/overview/xvalue/return.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/xvalue/return"}}
+            {:left {:code "code/overview/xvalue/to-lvalue.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/xvalue/to-lvalue"}}
+            {:left {:code "code/overview/xvalue/member.cpp"
+                    :tags [:valid :idiomatic]}
+             :right {:text "text/overview/xvalue/member"}}
+
             {:left {:text-data "Before"}
              :right {:text-data "After"}}
             {:left {:title "Returning reference to const local"

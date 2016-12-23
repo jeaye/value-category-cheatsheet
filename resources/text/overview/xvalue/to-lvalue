@@ -1,0 +1,1 @@
+Like prvalues, xvalues can be bound to rvalue references. They cannot, however, have their lifetime prolonged.
