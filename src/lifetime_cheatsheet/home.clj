@@ -51,7 +51,8 @@
        (for [section (:sections data)]
          (list
            [:h2.section (:title section)]
-           [:p.section (read-resource (:description section))]
+           (when-let [description (:description section)]
+             [:p.section (read-resource description)])
            [:table.grid
             [:colgroup
              [:col.left-column]
