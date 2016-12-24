@@ -4,3 +4,5 @@ TODO:
 
 Patterns:
   --
+  Return a struct and try to keep a ref to a member
+  Return a container and try to keep a ref to an element
