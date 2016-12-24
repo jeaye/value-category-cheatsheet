@@ -63,7 +63,8 @@
        :font-size "0.8em"
        :margin "5px 5px 5px 5px"}]
      [:p.text
-      {:margin "5px 5px 5px 5px"}]
+      {:margin "5px 5px 5px 5px"
+       :padding-bottom "1em"}]
      [:pre :code
       {:font-size code-font-size
        :padding-bottom "5px"}

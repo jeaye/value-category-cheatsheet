@@ -1,0 +1,1 @@
+An lvalue reference-to-const parameter may be bound to an outside lvalue, or it may be prolonging the lifetime of a prvalue. Thus, it's not well-defined to return an lvalue reference-to-const bound by that parameter. In this case, return a non-reference type.

@@ -89,5 +89,12 @@
                             :tags [:undefined-behavior]}
                      :right {:code "code/pattern/good-return-non-member-ref.cpp"
                              :text "text/pattern/return-non-member-ref"
-                             :tags [:valid :idiomatic]}}]}
+                             :tags [:valid :idiomatic]}}
+                    {:left {:title "Returning reference to const parameter"
+                            :code "code/pattern/bad-return-ref-to-const-param.cpp"
+                            :tags [:undefined-behavior]}
+                     :right {:code "code/pattern/good-return-ref-to-const-param.cpp"
+                             :text "text/pattern/return-ref-to-const-param"
+                             :tags [:valid :idiomatic]}}
+                    ]}
             ]}
