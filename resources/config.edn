@@ -85,8 +85,8 @@
              :rows [{:left {:text-data "Before"}
                      :right {:text-data "After"}}
                     {:left {:title "Returning reference to const local"
-                            :code "code/pattern/bad-non-member-ref.cpp"
+                            :code "code/pattern/bad-return-non-member-ref.cpp"
                             :tags [:undefined-behavior]}
-                     :right {:code "code/pattern/good-non-member-ref.cpp"
+                     :right {:code "code/pattern/good-return-non-member-ref.cpp"
                              :tags [:valid :idiomatic]}}]}
             ]}
