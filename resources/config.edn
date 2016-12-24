@@ -88,5 +88,6 @@
                             :code "code/pattern/bad-return-non-member-ref.cpp"
                             :tags [:undefined-behavior]}
                      :right {:code "code/pattern/good-return-non-member-ref.cpp"
+                             :text "text/pattern/return-non-member-ref"
                              :tags [:valid :idiomatic]}}]}
             ]}
