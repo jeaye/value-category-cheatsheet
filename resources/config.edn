@@ -1,4 +1,6 @@
-{:sections [{:title "PRvalues"
+{:sections [{:title "Value categories"
+            :description "text/overview/value-categories/description"}
+            {:title "PRvalues"
              :description  "text/overview/prvalue/description"
              :rows [{:left {:code "code/overview/prvalue/literal.cpp"
                             :tags [:valid :idiomatic]}
