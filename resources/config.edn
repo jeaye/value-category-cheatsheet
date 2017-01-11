@@ -28,7 +28,10 @@
                      :right {:text "text/overview/prvalue/uniform-initialization"}}
                     {:left {:code "code/overview/prvalue/uniform-initialization-argument.cpp"
                             :tags [:valid :idiomatic]}
-                     :right {:text "text/overview/prvalue/uniform-initialization-argument"}}]}
+                     :right {:text "text/overview/prvalue/uniform-initialization-argument"}}
+                     {:left {:code "code/overview/prvalue/non-const-lvalue-ref.cpp"
+                            :tags [:invalid]}
+                     :right {:text "text/overview/prvalue/non-const-lvalue-ref"}}]}
             {:title "Lvalues"
              :description "text/overview/lvalue/description"
              :rows [{:left {:code "code/overview/lvalue/string-literal.cpp"

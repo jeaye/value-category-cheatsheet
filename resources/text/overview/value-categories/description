@@ -1,4 +1,4 @@
-Every C++ expression belongs to exactly one of the following classifications, known as value categories: lvalue, xvalue, prvalue. There's an overlap between these, so a higher level of classifications can be thought of as just rvalues and glvalues.
+Every C++ expression belongs to exactly one of the following classifications, known as value categories: lvalue, xvalue, prvalue. There's an overlap between these, so a higher level of classification can be thought of as just rvalues and glvalues *(generalized lvalues)*.
 
 Knowing the value category of an expression will allow you to make informed decisions about the lifetime of the expression, thus preventing common pitfalls which introduce undefined behavior and compilation errors.
 
