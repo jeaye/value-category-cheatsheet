@@ -3,9 +3,12 @@
             [lifetime-cheatsheet.css :as css]
             [hiccup.core :as hiccup]
             [hiccup.page :as page]
+            [markdown.core :refer [md-to-html-string]]
             [clojure.java.io :as io]))
 
 (def read-resource (comp slurp io/resource))
+(def read-code (comp hiccup/h read-resource))
+(def read-markdown (comp md-to-html-string read-resource))
 
 (defn title [title-str]
   [:p.title title-str])
@@ -13,7 +16,7 @@
 (defn code [code-str]
   [:pre
    [:code {:class "cpp"}
-    (hiccup/h code-str)]])
+    code-str]])
 
 (defn text [text-str]
   [:p.text text-str])
@@ -28,9 +31,9 @@
    (when-let [title-str (:title data)]
      (title title-str))
    (when-let [code-str (:code data)]
-     (code (read-resource code-str)))
+     (code (read-code code-str)))
    (when-let [text-str (:text data)]
-     (text (read-resource text-str)))
+     (text (read-markdown text-str)))
    (when-let [text-str (:text-data data)]
      (text text-str))
    (tag-spans (:tags data))])
@@ -52,7 +55,7 @@
          (list
            [:h2.section (:title section)]
            (when-let [description (:description section)]
-             [:p.section (read-resource description)])
+             [:p.section (read-markdown description)])
            [:table.grid
             [:colgroup
              [:col.left-column]
