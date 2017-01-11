@@ -57,7 +57,10 @@
                      :right {:text "text/overview/lvalue/member"}}
                     {:left {:code "code/overview/lvalue/ref-to-rvalue-ref.cpp"
                             :tags [:valid :idiomatic]}
-                     :right {:text "text/overview/lvalue/ref-to-rvalue-ref"}}]}
+                     :right {:text "text/overview/lvalue/ref-to-rvalue-ref"}}
+                     {:left {:code "code/overview/lvalue/rvalue-ref.cpp"
+                            :tags [:invalid]}
+                     :right {:text "text/overview/lvalue/rvalue-ref"}}]}
             {:title "Xvalues"
              :description "text/overview/xvalue/description"
              :rows [{:left {:code "code/overview/xvalue/move.cpp"

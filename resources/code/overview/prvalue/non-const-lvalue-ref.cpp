@@ -1,1 +1,1 @@
-int &a{ 42 };
+int &a{ 42 }; // invalid
