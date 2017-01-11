@@ -2,6 +2,7 @@ Every C++ expression belongs to exactly one of the following classifications, kn
 
 Knowing the value category of an expression will allow you to make informed decisions about the lifetime of the expression, thus preventing common pitfalls which introduce undefined behavior.
 
+```text
                 expression
                 /        \
                /          \
@@ -9,3 +10,4 @@ Knowing the value category of an expression will allow you to make informed deci
            /     \       /    \
           /       \     /      \
        lvalue      xvalue    prvalue
+```
