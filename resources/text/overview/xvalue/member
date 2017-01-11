@@ -1,1 +1,1 @@
-A non-static data member of any rvalue is an xvalue. cppreference is incorrect on this one, so note http://eel.is/c++draft/expr.ref#4.2
+A non-static data member of any rvalue is an xvalue. cppreference is incorrect on this one, so note [the standard](http://eel.is/c++draft/expr.ref#4.2).
