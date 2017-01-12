@@ -61,7 +61,10 @@
      [:p.title
       {:font-style "italic"
        :font-size "0.8em"
-       :margin "5px 5px 5px 5px"}]
+       :margin "5px 5px 5px 5px"
+       :position "absolute"
+       :top "5px"
+       :left "5px"}]
      [:p.text
       {:margin "5px 5px 5px 5px"
        :padding-bottom "1em"}]
