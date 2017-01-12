@@ -104,5 +104,10 @@
                      :right {:code "code/pattern/good-return-ref-to-const-param.cpp"
                              :text "text/pattern/return-ref-to-const-param"
                              :tags [:valid :idiomatic]}}
-                    ]}
-            ]}
+                    {:left {:title "Hanging onto an xvalue member"
+                            :code "code/pattern/bad-xvalue-struct-member.cpp"
+                            :tags [:undefined-behavior]}
+                     :right {:code "code/pattern/good-xvalue-struct-member.cpp"
+                             :text "text/pattern/xvalue-struct-member"
+                             :tags [:valid :idiomatic]}}
+                    ]}]}
