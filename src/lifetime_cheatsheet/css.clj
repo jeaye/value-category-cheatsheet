@@ -54,9 +54,9 @@
         :margin "5px 5px 5px 5px"
         :padding "2px 4px 2px 4px"
         :border-radius "5px"}]
-      [:span.valid :span.idiomatic
+      [:span.valid
        {:background-color green}]
-      [:span.undefined-behavior :span.invalid :span.non-idiomatic
+      [:span.undefined-behavior :span.invalid
        {:background-color orange}]]
      [:p.title
       {:font-style "italic"
