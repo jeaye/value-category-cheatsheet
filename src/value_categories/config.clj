@@ -1,4 +1,4 @@
-(ns lifetime-cheatsheet.config
+(ns value-categories.config
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]))
 

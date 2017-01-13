@@ -1,4 +1,4 @@
-(ns lifetime-cheatsheet.css
+(ns value-categories.css
   (:require [garden.core :as garden]))
 
 ; Colors from http://ethanschoonover.com/solarized

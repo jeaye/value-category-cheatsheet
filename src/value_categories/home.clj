@@ -1,8 +1,10 @@
-(ns lifetime-cheatsheet.home
-  (:require [lifetime-cheatsheet.config :as config]
-            [lifetime-cheatsheet.css :as css]
-            [hiccup.core :as hiccup]
-            [hiccup.page :as page]
+(ns value-categories.home
+  (:require [value-categories
+             [config :as config]
+             [css :as css]]
+            [hiccup
+             [core :as hiccup]
+             [page :as page]]
             [markdown.core :refer [md-to-html-string]]
             [clojure.java.io :as io]))
 
