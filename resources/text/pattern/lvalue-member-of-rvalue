@@ -1,0 +1,1 @@
+A function returning an lvalue reference always results in an lvalue reference, even when it's called on an rvalue object. In this case, `foo{}` is a prvalue, but calling `get_a()` on it yields an lvalue. As shown, just because a function returns an lvalue member doesn't make it safe to bind to another reference.

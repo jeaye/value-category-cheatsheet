@@ -118,4 +118,10 @@
                             :code "code/pattern/good-lvalue-container-element.cpp"
                             :tags [:valid :idiomatic]}
                      :right {:text "text/pattern/lvalue-container-element"}}
+                    {:left {:title "Hanging onto an lvalue member of an rvalue"
+                            :code "code/pattern/bad-lvalue-member-of-rvalue.cpp"
+                            :tags [:undefined-behavior]}
+                     :right {:code "code/pattern/good-lvalue-member-of-rvalue.cpp"
+                             :text "text/pattern/lvalue-member-of-rvalue"
+                             :tags [:valid :idiomatic]}}
                     ]}]}
