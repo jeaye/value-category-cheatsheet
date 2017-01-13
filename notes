@@ -1,12 +1,10 @@
 TODO:
   - Add a section on forwarding references
   - Add more patterns
-  - Invalid code, such as prvalue -> non-const lvalue binding
   - Remove idiomatic tag?
 
 Patterns:
   --
   Return a struct and try to keep a ref to a member
-  Return a container and try to keep a ref to an element
   Bind an rvalue string to a string_view
   Return lvalue member from rvalue member function
