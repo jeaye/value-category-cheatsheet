@@ -5,6 +5,5 @@ TODO:
 
 Patterns:
   --
-  Return a struct and try to keep a ref to a member
   Bind an rvalue string to a string_view
   Return lvalue member from rvalue member function
