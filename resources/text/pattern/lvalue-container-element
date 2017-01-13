@@ -1,0 +1,1 @@
+A container returned as an lvalue doesn't need its lifetime extended, so binding a member or element from it to an lvalue reference is well-defined.

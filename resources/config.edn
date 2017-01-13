@@ -114,4 +114,8 @@
                      :right {:code "code/pattern/good-xvalue-container-element.cpp"
                              :text "text/pattern/xvalue-container-element"
                              :tags [:valid :idiomatic]}}
+                    {:left {:title "Hanging onto an lvalue container element"
+                            :code "code/pattern/good-lvalue-container-element.cpp"
+                            :tags [:valid :idiomatic]}
+                     :right {:text "text/pattern/lvalue-container-element"}}
                     ]}]}
