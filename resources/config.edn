@@ -108,4 +108,10 @@
                      :right {:code "code/pattern/good-xvalue-struct-member.cpp"
                              :text "text/pattern/xvalue-struct-member"
                              :tags [:valid :idiomatic]}}
+                    {:left {:title "Hanging onto an xvalue container element"
+                            :code "code/pattern/bad-xvalue-container-element.cpp"
+                            :tags [:undefined-behavior]}
+                     :right {:code "code/pattern/good-xvalue-container-element.cpp"
+                             :text "text/pattern/xvalue-container-element"
+                             :tags [:valid :idiomatic]}}
                     ]}]}

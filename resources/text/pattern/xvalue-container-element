@@ -1,0 +1,1 @@
+A container, returned as an rvalue, does not have its lifetime extended by binding a reference to one of its members or elements. At the end of the expression, the container will be destroyed and the reference will be dangling.
