@@ -6,4 +6,3 @@ TODO:
 Patterns:
   --
   Bind an rvalue string to a string_view
-  Return lvalue member from rvalue member function
