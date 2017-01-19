@@ -30,10 +30,10 @@
      {:background-color content-background-color
       :color content-color
       :font-size content-font-size
-      :width "100%"
+      :width "97%"
       :min-height "100%"
-      :margin "0%"
-      :padding "0%"}
+      :margin "auto"
+      :padding "0px"}
      [:.version
       {:color blue
        :position "absolute"
