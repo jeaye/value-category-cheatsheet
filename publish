@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -eu
+
+title="Value category cheatsheet"
+url=http://localhost:3000/
+output=render.pdf
+
+wkhtmltopdf -B 0 -L 0 -R 0 -T 0 --title $title "$output"
