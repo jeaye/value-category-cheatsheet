@@ -138,6 +138,10 @@
                      :right {:code "code/pattern/good-string-view-from-rvalue.cpp"
                              :text "text/pattern/string-view-from-rvalue"
                              :tags [:valid]}}
+                    {:left {:title "Binding an rvalue to a string_view parameter"
+                            :code "code/pattern/good-string-view-param-from-rvalue.cpp"
+                            :tags [:valid]}
+                     :right {:text "text/pattern/string-view-param-from-rvalue"}}
                     ]
              }
             ]}
