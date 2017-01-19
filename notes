@@ -4,4 +4,3 @@ TODO:
 
 Patterns:
   --
-  Bind an rvalue string to a string_view
