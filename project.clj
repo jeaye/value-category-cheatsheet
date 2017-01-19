@@ -1,4 +1,4 @@
-(defproject value-categories "0.1.0"
+(defproject value-categories "2"
   :description "A cheatsheet for modern C++ value categories"
   :url "https://github.com/jeaye/value-category-cheatsheet"
   :license {:name "jank license"
