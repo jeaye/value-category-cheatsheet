@@ -70,6 +70,7 @@
        :padding-bottom "1em"}]
      [:pre :code
       {:font-size code-font-size
+       :padding-top "1em"
        :padding-bottom "5px"}
       [:.hljs-built_in {:color (str violet " !important")}]]
      [:a:hover {:color link-hover-color}]]))
