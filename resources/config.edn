@@ -132,6 +132,12 @@
                      :right {:code "code/pattern/good-lvalue-member-of-rvalue.cpp"
                              :text "text/pattern/lvalue-member-of-rvalue"
                              :tags [:valid]}}
+                    {:left {:title "Binding an rvalue to a string_view"
+                            :code "code/pattern/bad-string-view-from-rvalue.cpp"
+                            :tags [:undefined-behavior]}
+                     :right {:code "code/pattern/good-string-view-from-rvalue.cpp"
+                             :text "text/pattern/string-view-from-rvalue"
+                             :tags [:valid]}}
                     ]
              }
             ]}
