@@ -34,6 +34,11 @@
       :min-height "100%"
       :margin "0%"
       :padding "0%"}
+     [:.version
+      {:color blue
+       :position "absolute"
+       :top "10px"
+       :right "10px"}]
      [:p.section {:font-size section-font-size}]
      [:.grid {:width "100%"}]
      [:table :tr :td

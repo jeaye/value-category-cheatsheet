@@ -1,4 +1,4 @@
-(defproject value-categories "0.1.0-SNAPSHOT"
+(defproject value-categories "0.1.0"
   :description "A cheatsheet for modern C++ value categories"
   :url "https://github.com/jeaye/value-category-cheatsheet"
   :license {:name "jank license"
@@ -9,8 +9,10 @@
                  [ring/ring-defaults "0.2.1"]
                  [hiccup "1.0.5"]
                  [garden "1.3.2"]
-                 [markdown-clj "0.9.91"]]
-  :plugins [[lein-ring "0.9.7"]]
+                 [markdown-clj "0.9.91"]
+                 [environ "1.1.0"]]
+  :plugins [[lein-ring "0.9.7"]
+            [lein-environ "1.1.0"]]
   :ring {:handler value-categories.handler/app
          :auto-reload? true
          :auto-refresh? true}

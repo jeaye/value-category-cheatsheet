@@ -6,6 +6,7 @@
              [core :as hiccup]
              [page :as page]]
             [markdown.core :refer [md-to-html-string]]
+            [environ.core :refer [env]]
             [clojure.java.io :as io]))
 
 (def read-resource (comp slurp io/resource))
@@ -53,6 +54,7 @@
        [:script {:src "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"}]
        [:script "hljs.initHighlightingOnLoad();"]]
       [:body
+       [:div.version (str "v" (:value-categories-version env))]
        (for [section (:sections data)]
          (list
            [:h2.section (:title section)]
