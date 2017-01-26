@@ -1,1 +1,1 @@
-xvalues are rvalues which are also glvalues, such as lvalues which have been casted to an rvalue reference. xvalues cannnot have their life prolonged by binding to anothe reference. You cannot take the address of any xvalue. The lifetime of an xvalue is the extent of the full expression.
+xvalues are rvalues which are also glvalues, such as lvalues which have been casted to an rvalue reference. xvalues cannnot have their life prolonged by binding to another reference. You cannot take the address of an xvalue. The lifetime of an xvalue is the extent of the full expression.

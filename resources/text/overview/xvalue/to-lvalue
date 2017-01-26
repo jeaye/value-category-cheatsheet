@@ -1,1 +1,1 @@
-Like prvalues, xvalues can be bound to rvalue references. They cannot, however, have their lifetime prolonged.
+Like prvalues, xvalues can be bound to rvalue references and lvalue references-to-const. They cannot, however, have their lifetime prolonged.
