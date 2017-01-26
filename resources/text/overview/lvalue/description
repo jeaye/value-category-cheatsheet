@@ -1,1 +1,1 @@
-lvalues, generalized as glvalues, are either specifically lvalues or xvalues. lvalues must have a name and may exist as a local, global, parameter, etc. xvalues are both lvalues and (impure) rvalues, which may be the result of returning or casting an lvalue to an rvalue reference.
+lvalues are glvalues which are bound to a name; typically, they appear on the left hand side of expressions (such as `a = 5`). lvalues may exist as a local, global, parameter, member, etc. The lifetime of an lvalue is the extent of the current scope.
