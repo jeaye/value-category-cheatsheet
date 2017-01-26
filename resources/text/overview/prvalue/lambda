@@ -1,1 +1,1 @@
-Anonymous functions, regardless of their capture, are prvalues like any other literal.
+Anonymous functions, regardless of their capture, are prvalues like other literals.
