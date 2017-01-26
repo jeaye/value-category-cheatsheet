@@ -1,1 +1,1 @@
-An rvalue cannot be bound to an lvalue references-to-non-const.
+An rvalue cannot be bound to an lvalue reference-to-non-const.
