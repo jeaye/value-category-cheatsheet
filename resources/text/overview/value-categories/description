@@ -9,5 +9,5 @@ Knowing the value category of an expression will allow you to make informed deci
            glvalue       rvalue
            /     \       /    \
           /       \     /      \
-       lvalue      xvalue    prvalue
+       lvalue      xvalue     prvalue
 ```
