@@ -1,1 +1,1 @@
-A string\_view can be thought of a view into a std::string, or C string, which holds the begin and end of the data. It doesn't extend the string's lifetime and it should be thought of as just holding onto members of the string: begin and end.
+A string\_view is like an lvalue reference to a `std::string`, or C string. It doesn't extend the string's lifetime and it should be thought of as just holding onto members of the string: begin and end.

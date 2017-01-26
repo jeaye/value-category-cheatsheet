@@ -1,1 +1,1 @@
-prvalues can have their lifetime prolonged to be the lifetime of a reference to which they're bound. xvalues don't have this same benefit, though it is still possible to bind them to other references.
+prvalues can have their lifetime prolonged to be the lifetime of a reference to which they're bound. glvalues, meaning both lvalues and xvalues, don't have this same benefit, though it is still possible to bind them to other references.

@@ -3,4 +3,4 @@ struct foo
 
 foo get();
 
-int const &a{ foo().a }; // a is an xvalue
+int const &b{ foo().a }; // a is an xvalue

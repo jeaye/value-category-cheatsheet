@@ -1,1 +1,1 @@
-Members of rvalue objects are xvalues; xvalues cannot have their lifetime extended by bounding to a reference-to-non-const or rvalue-reference, though the binding is valid and will compile. When pulling a member out of an rvalue object, prefer to copy or move the member.
+Members of rvalue objects are xvalues; xvalues cannot have their lifetime extended by binding to a reference-to-non-const or rvalue-reference, though the binding is valid and will compile. When pulling a member out of an rvalue object, prefer to copy or move the member.
