@@ -1,5 +1,7 @@
-{:sections [{:title "Value categories"
-            :description "text/overview/value-categories/description"}
+{:sections [{;:title "Can everyone see this just fine?"
+             :title "Value categories"
+             :description "text/overview/value-categories/description"
+             }
             {:title "PRvalues"
              :description  "text/overview/prvalue/description"
              :rows [{:left {:code "code/overview/prvalue/literal.cpp"
