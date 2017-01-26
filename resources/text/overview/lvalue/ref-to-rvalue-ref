@@ -1,1 +1,1 @@
-Though a is initialized with a prvalue, it becomes an lvalue. Since it's an lvalue, a normal lvalue reference can be taken from it.
+Though `a` is initialized with a prvalue, it becomes an lvalue. Since it's an lvalue, a normal lvalue reference can be taken from it.

@@ -1,1 +1,1 @@
-If a function returns a reference to an object, const or non-const, it's an lvalue.
+A function call is an lvalue if the function returns a reference to an object, const or non-const.
