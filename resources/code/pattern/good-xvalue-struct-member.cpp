@@ -3,5 +3,5 @@ struct foo
 
 foo get();
 
-int const b{ foo().a }; // copy the xvalue
-int const c{ std::move(foo().a) }; // move the xvalue
+int const b{ get().a }; // copy the xvalue
+int const c{ std::move(get().a) }; // move the xvalue
