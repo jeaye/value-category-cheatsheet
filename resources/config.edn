@@ -102,6 +102,10 @@
                      :right {:code "code/pattern/good-return-ref-to-const-param.cpp"
                              :text "text/pattern/return-ref-to-const-param"
                              :tags [:valid]}}
+                    {:left {:title "Moving an object properly"
+                            :code "code/pattern/good-move-properly.cpp"
+                            :tags [:valid]}
+                     :right {:text "text/pattern/good-move-properly"}}
                     {:left {:title "Hanging onto an xvalue member"
                             :code "code/pattern/bad-xvalue-struct-member.cpp"
                             :tags [:undefined-behavior]}
