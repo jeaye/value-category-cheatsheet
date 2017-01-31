@@ -61,7 +61,7 @@
         :border-radius "5px"}]
       [:span.valid
        {:background-color green}]
-      [:span.undefined-behavior :span.invalid
+      [:span.undefined-behavior :span.invalid :span.non-idiomatic
        {:background-color orange}]]
      [:p.title
       {:font-style "italic"
