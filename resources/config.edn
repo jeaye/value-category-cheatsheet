@@ -105,7 +105,13 @@
                     {:left {:title "Moving an object properly"
                             :code "code/pattern/good-move-properly.cpp"
                             :tags [:valid]}
-                     :right {:text "text/pattern/good-move-properly"}}
+                     :right {:text "text/pattern/move-properly"}}
+                    {:left {:title "Move in as rvalue, return as non-reference"
+                            :code "code/pattern/bad-move-in-return.cpp"
+                            :tags [:non-idiomatic]}
+                     :right {:code "code/pattern/good-move-in-return.cpp"
+                             :text "text/pattern/move-in-return"
+                             :tags [:valid]}}
                     {:left {:title "Hanging onto an xvalue member"
                             :code "code/pattern/bad-xvalue-struct-member.cpp"
                             :tags [:undefined-behavior]}

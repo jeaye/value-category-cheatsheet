@@ -1,0 +1,3 @@
+Parameters of a reference-type will not be automatically candidates for return value optimization, as they could be referring to objects outside the scope of the function. In order to avoid deep copying here, use `std::move` to coerce the parameter to an xvalue when returning.
+
+Note, do not use this technique when returning non-reference parameters or objects local to the function's scope; they will automatically be returned as rvalues, if possible.
