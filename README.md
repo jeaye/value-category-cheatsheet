@@ -12,5 +12,5 @@ intricacies of everyday C++ work.
 ## Running locally
 ```bash
 # Assuming leiningen is installed
-lein ring server
+$ lein ring server
 ```
