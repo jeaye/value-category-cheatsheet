@@ -4,7 +4,7 @@ set -eu
 
 title="Value category cheatsheet"
 url=http://localhost:3000/
-output=render.pdf
+output=value-category-cheatsheet.pdf
 
 wkhtmltopdf -B 0 -L 0 -R 0 -T 0 \
             -s A4 --minimum-font-size 18 \
