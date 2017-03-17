@@ -49,6 +49,9 @@
                     {:left {:code "code/overview/lvalue/indirection.cpp"
                             :tags [:valid]}
                      :right {:text "text/overview/lvalue/indirection"}}
+                    {:left {:code "code/overview/lvalue/subscript.cpp"
+                            :tags [:valid]}
+                     :right {:text "text/overview/lvalue/subscript"}}
                     {:left {:code "code/overview/lvalue/rvalue-ref-call.cpp"
                             :tags [:valid]}
                      :right {:text "text/overview/lvalue/rvalue-ref-call"}}
@@ -74,7 +77,10 @@
                      :right {:text "text/overview/xvalue/to-lvalue"}}
                     {:left {:code "code/overview/xvalue/member.cpp"
                             :tags [:valid]}
-                     :right {:text "text/overview/xvalue/member"}}]}
+                     :right {:text "text/overview/xvalue/member"}}
+                    {:left {:code "code/overview/xvalue/subscript.cpp"
+                            :tags [:valid]}
+                     :right {:text "text/overview/xvalue/subscript"}}]}
             {:title "Lifetime extension"
              :description "text/overview/lifetime/description"
              :rows [{:left {:code "code/overview/lifetime/ref-to-const.cpp"
