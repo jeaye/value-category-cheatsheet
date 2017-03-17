@@ -96,6 +96,7 @@
                             :tags [:valid]}
                      :right {:text "text/overview/lifetime/ref-to-const-from-xvalue"}}]}
             {:title "Common patterns and mistakes"
+             :description "text/overview/pattern/description"
              :rows [{:left {:title "Returning reference to const local"
                             :code "code/pattern/bad-return-non-member-ref.cpp"
                             :tags [:undefined-behavior]}
