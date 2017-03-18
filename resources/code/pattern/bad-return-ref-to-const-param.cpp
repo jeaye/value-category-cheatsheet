@@ -10,4 +10,5 @@ T const& get(std::string const &key,
 
 int a{}; // lvalue
 get("meow", a); // lvalue, well-defined
-get("meow", 0); // lvalue, undefined
+int const b{ get("meow", 0) }; // lvalue, well-defined
+int const &c{ get("meow", 0) }; // lvalue, undefined

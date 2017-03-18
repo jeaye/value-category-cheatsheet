@@ -11,3 +11,5 @@ T get(std::string const &key,
 int a{}; // lvalue
 get("meow", a); // prvalue
 get("meow", 0); // prvalue
+int const b{ get("meow", 0) }; // lvalue
+int const &c{ get("meow", 0) }; // lvalue, extends prvalue lifetime
