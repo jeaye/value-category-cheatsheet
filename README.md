@@ -20,3 +20,9 @@ This cheatsheet is meant to be a practical reference for the everyday C++ dev
 working in existing codebases. Since C++17 is not yet published, and codebases
 are much more likely to be using the C++11 and C++14 rulesets, I've focused on
 C++14.
+
+## Donate
+Feel free to shoot Bitcoins my way: **123NMGCvRZLfQJwk2AhsLMLSpCCJhCRoz6**
+
+For more information regarding how I use donations, see
+[here](http://jeaye.com/donate/).
