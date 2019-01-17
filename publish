@@ -6,9 +6,10 @@ title="Value category cheatsheet"
 url=http://localhost:3000/
 output=value-category-cheatsheet.pdf
 
+rm -f "$output"
 wkhtmltopdf -B 0 -L 0 -R 0 -T 0 \
-            -s A4 --minimum-font-size 18 \
-            --zoom 2 --dpi 100 \
+            -s A4  \
+            --zoom 1 --dpi 200 \
             --disable-smart-shrinking \
             --title "$title" \
             "$url" "$output"

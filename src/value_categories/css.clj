@@ -13,12 +13,12 @@
 
 (def content-background-color base3)
 (def content-color base00)
-(def content-font-size "1.0em")
-(def section-font-size "1.0em")
-(def code-font-size "1.1em")
+(def content-font-size "0.8em")
+(def section-font-size "0.8em")
+(def code-font-size "1.0em")
 
 (def tag-color base3)
-(def tag-font-size "0.8em")
+(def tag-font-size "0.7em")
 
 (def link-hover-color orange)
 
