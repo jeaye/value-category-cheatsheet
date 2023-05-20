@@ -9,6 +9,10 @@ web page to a PDF using [wkhtmltopdf](https://wkhtmltopdf.org/).
 This project accompanied a talk I presented, in hopes of conveying the
 intricacies of everyday C++ work.
 
+## Viewing online
+There is a rendered version of this cheatsheet available in this repo. You can
+view it online here: https://raw.githubusercontent.com/jeaye/value-category-cheatsheet/master/value-category-cheatsheet.pdf
+
 ## Running locally
 ```bash
 # Assuming leiningen is installed
